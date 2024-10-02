@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Learn - Teacher Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="icon.jpg" alt="Smart Learn Logo" class="header-logo">
+    <h1>Smart Learn</h1>
+  </div>
+</header>
+
+<main>
+  <!-- Centered heading for Teacher Sign-Up -->
+  <h2 class="center-heading">Become a Teacher</h2>
+
+  <section id="signup">
+    <!-- Profile picture upload section (optional) -->
+    <img src="photo.jpg" alt="Profile Image" class="photo">
+    <div class="profile-upload">
+      <label for="profile-pic">Choose a profile picture (optional):</label>
+      <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+    </div>
+
+    <form   action="teacher-part 2/incoming-sessions.html" method="GET">
+      <!-- First Name -->
+      <div class="form-group">
+        
+        <input type="text" id="first-name" placeholder="First Name" required>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        
+        <input type="text" id="last-name" placeholder="Last Name" required>
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        
+        <input type="number" id="age" placeholder="Age" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+       
+        <input type="email" id="email" placeholder="Email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+
+      <!-- Country -->
+      <div class="form-group">
+        
+        <input type="text" id="city" placeholder="city" required>
+      </div>
+
+      <!-- Province -->
+      <div class="form-group">
+        
+        <input type="text" id="phone number" placeholder="phone number" required>
+      </div>
+
+      <!-- Languages Spoken (optional) -->
+      <div class="form-group">
+        
+        <select id="languages">
+          <option value="" disabled selected>Select Language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="mandarin">Mandarin</option>
+          <option value="arabic">Arabic</option>
+          <option value="hindi">Hindi</option>
+          <option value="portuguese">Portuguese</option>
+          <option value="russian">Russian</option>
+          <option value="japanese">Japanese</option>
+        </select>
+      </div>
+
+      <!-- Language Level (optional) -->
+      <div class="form-group">
+        
+        <select id="language-level">
+          <option value="" disabled selected>Select Language Level</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+          <option value="native">Native</option>
+        </select>
+      </div>
+
+      <!-- Bio Section (optional) -->
+      <div class="form-group">
+        <label for="short bio">Short Bio:</label>
+        <textarea id="short bio" placeholder="Tell us about yourself" rows="4"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="login-option">
+      <p>Already have an account? <a href="loginTeatcher.html">Log in here</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Smart Learn</p>
+  <p>Contact us: <a href="mailto:support@smartlearn.com">support@smartlearn.com</a></p>
+</footer>
+
+</body>
+</html>
+
