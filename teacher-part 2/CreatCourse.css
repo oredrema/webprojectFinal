@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #b0e0e6;
+    width: 100%;
+    padding: 20px 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+ /* Title inside header */
+ .header-title {
+    color: #008080;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-title {
+    font-size: 24px;
+    color: #008080;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.container {
+    width: 500px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 150px; /* Adjusted to give space for the fixed header */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #4a9086;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1caa4e;
+    color: #fefefe;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background-color: #9dd1bf;
+}
+
+footer {
+    background-color: #b0e0e6;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: #008080;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+a {
+    color: #008080;
+}
+

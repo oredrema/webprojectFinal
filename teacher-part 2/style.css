@@ -1,0 +1,193 @@
+body {
+  font-family: sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue pastel background */
+  color: #333; 
+}
+
+header {
+  background-color: #b0e0e6; /* Powder blue header */
+  color: #008080; /* Teal text */
+  text-align: center;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+}
+
+header h1 {
+  margin: 0; /* Reset margin to avoid shifting */
+}
+
+.header-logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+main {
+  padding: 2em;
+}
+
+.center-heading {
+  text-align: center;
+  color: #008080; /* Teal color */
+  font-size: 2em;
+  margin: 0 auto 20px auto;
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em; 
+  max-width: 600px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the section */
+  margin-top: 20px;
+}
+
+h1, h2 {
+  color: #008080; /* Teal headings */
+}
+
+.photo {
+  display: block;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  margin: 0 auto 20px auto;
+}
+
+.profile-upload {
+  text-align: center;
+  margin-top: 20px; /* Add spacing between the image and upload input */
+  margin-bottom: 30px;
+}
+
+.profile-upload label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"], 
+form select, 
+form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical; /* Allows vertical resizing only */
+  min-height: 150px; /* Set a minimum height for better UX */
+  font-family: inherit; /* Make sure the font matches the rest */
+  line-height: 1.5; /* Improve text readability */
+}
+
+button[type="submit"] {
+  background-color: #008080; /* Teal button */
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%; /* Make the button full width for consistency */
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: #006666; /* Darker teal on hover */
+}
+
+footer {
+  background-color: #b0e0e6; /* Powder blue footer */
+  color: #008080; /* Teal text */
+  text-align: center;
+  padding: 1em 0;
+}
+
+.login-option {
+  text-align: center;
+}
+
+.login-option a {
+  color: #008080; /* Teal link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-option a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 0 2em;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #008080; /* Teal */
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #f08080; /* Light coral */
+  color: #fff;
+}
+
+/* Login page specific styles */
+.login-links {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.login-links a {
+  color: #008080; /* Teal link color */
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}

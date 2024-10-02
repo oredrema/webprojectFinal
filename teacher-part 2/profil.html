@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="Profil.css">
+   
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="icon.jpg" alt="Smart Learn Logo" class="header-logo">
+            <h1>Smart Learn</h1>
+          </div>
+
+    </header>
+    <!-- Header Section -->
+   
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Profile Form Container -->
+        <div class="container">
+            
+            
+            <!-- Input Fields -->
+            <div class="input-fields">
+                <img src="photo.jpg" alt="Profile Image" class="photo">
+                <div class="profile-upload">
+                    <label for="profile-pic">Choose a profile picture (optional):</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+                <input type="text" placeholder="Enter first name..." class="input-box" required>
+                <input type="text" placeholder="Enter last name..." class="input-box" required>
+                <input type="number" id="age" placeholder="Age" class="input-box" required>
+                <input type="email" placeholder="Enter email..." class="input-box" required>
+                <input type="password" placeholder="Enter password..." class="input-box" required>
+                <input type="text" placeholder="Enter a short bio (optional)" class="input-box">
+                <select id="languages">
+                    <option value="">Select Language</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="mandarin">Mandarin</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="portuguese">Portuguese</option>
+                    <option value="russian">Russian</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+            </div>
+            <!-- Buttons -->
+            <div class="buttons">
+                <button class="save-btn">Save Changes</button>
+                <button class="delete-btn">Delete Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Smart Learn</p>
+            <p>Contact us: <a href="mailto:support@smartlearn.com">support@smartlearn.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
