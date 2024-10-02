@@ -1,0 +1,132 @@
+
+/* @font-face {
+    font-family: cairo;
+    src: url('../Fonts/CairoRegular400.ttf');
+} */
+
+* {
+    box-sizing: border-box;
+    /* font-family: "Segoe UI"; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    /* background-color: #f4f4f4; */
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.sessions-row-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.sessions-column-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.sessions-row-container a, .sessions-column-container{
+    text-decoration: none;
+}
+
+.max-width-700 {
+    max-width: 700px;
+}
+
+.sessions-column-container .choice {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sessions-row-container a, .sessions-column-container a {
+    text-decoration: none;
+}
+
+.choice-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+.session-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; 
+}
+
+.session-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.session-card h2 {
+    font-size: 20px;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.session-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.session-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.session-info h2{
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+}
+
+.session-info .time {
+    color: #555;
+}
+
+/* قواعد التنسيق عند عرض الصفحة على شاشات الجوال */
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-container {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .courses-row {
+        grid-template-columns: 1fr;
+    }
+}

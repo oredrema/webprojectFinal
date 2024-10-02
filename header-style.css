@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: #b0e0e6;
+    padding: 0 5%;
+}
+
+header .logo {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+header .logo .websiteName{
+    color: #008080;
+    font-weight: 900;
+    /* font-size: 18px; */
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header .search-bar{
+    flex: 2 !important;
+}
+
+header .navList {
+    /* background-color: #6edbd8; */
+    background-color: #b0e0e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    padding: 0 20px;
+    height: 60px;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+}
+
+header a{
+    color: #008080;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .navList ul {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    width: fit-content;
+}
+
+header .navList li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    /* width: max-content; */
+    color: white;
+}
+
+header .navList li .activeLi {
+    color: #f1f5f2;
+    /* border-bottom: #a56f49 dashed 1.5px; */
+    font-size: 15px;
+}
+
+header .navList li a:hover {
+    color: #f1f5f2;
+    /* border-bottom: #a56f49 dashed 1.5px; */
+    font-size: 15px;
+}
+
+header .mobile-nav{
+    display: none;
+    margin-top: 5px;
+}
+
+header .user-icon {
+    margin: 5px 20px;
+    width: 60px;
+    flex: 0.9;
+    direction: rtl;
+}
+
+header .user-icon i {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 700px) {
+    header{
+        /* background-color: transparent; */
+        padding-right: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    header .search-bar {
+        display: none;
+    }
+
+    header .navList{
+        background-color: transparent;
+        justify-content: end;
+    }
+    
+    header .mobile-nav{
+        display: block !important;
+    }
+
+    
+
+    header .navList ul{
+        display: none;
+    }
+
+    /* .navList ul li{
+        background-color: #41cbca;
+        margin-bottom: 2px;
+        font-size: 15px;
+        height: 38px;
+        padding-top: 4px;
+        width: 100%;
+    } */
+}
