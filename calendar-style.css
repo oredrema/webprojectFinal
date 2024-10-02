@@ -1,0 +1,56 @@
+body {
+    background-color: #f0f8ff; /* Change this to your desired color */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Optional: Set a default font for the webpage */
+}
+
+.calendar {
+    margin: 20px 0;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+.day-name {
+    background-color: #33b3cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.day {
+    min-height: 100px;
+    background-color: #b2e6e6;
+    border: 1px solid #d0f0f7;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.session {
+    background-color: #b2e6e6;
+    border: 2px solid #33b3cc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.session-title {
+    font-weight: bold;
+    color: #007b8a;
+}
+
+.session-time, .session-date {
+    font-size: 12px;
+    color: #666;
+}
+
